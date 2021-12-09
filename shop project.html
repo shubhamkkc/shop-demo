@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+
+            font-family: 'Baloo Bhai', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            background-size: 100%;
+
+        }
+
+        #top {
+            font-size: 29px;
+            padding: 6px 10px;
+            margin-top: 15px;
+            height: 46px;
+        }
+
+        .topleft {
+            display: inline-block;
+            width: 73%;
+            color: black;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .topright {
+            display: inline-block;
+            width: 21%;
+            margin-left: 25px;
+            padding: 4px 13px;
+            border-radius: 6px;
+
+        }
+
+        .button {
+
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            width: 123px;
+            border: 1px;
+            cursor: pointer;
+
+        }
+
+        #navbar {
+            background-color: #f58220;
+            height: 51px;
+            width: 100%;
+            margin-top: 5px;
+
+        }
+        #navbar ul{
+            display: flex;
+            
+           
+        }
+
+        #navbar li {
+           margin: 10px;
+            color: bisque;
+            font-size: 25px;
+            border: 2px solid red;
+            text-decoration: none;
+
+        }
+
+        #navbar a {
+            background-color: rgb(rgb(180, 170, 170), green, blue);
+            text-decoration: none;
+            color: rgb(243, 232, 232);
+            font-size: 23px;
+            margin: 6px 5px;
+            text-align: center;
+        }
+
+        #navbar a:hover {
+            color: yellow;
+        }
+
+        #navbar a:active {
+            color: blue;
+        }
+
+        #navbar input {
+            position: absolute;
+            right: 34px;
+            top: 86px;
+            border-radius: 14px;
+            border: 1px;
+            height: 32px;
+            width: 241px;
+
+        }
+
+        #product {
+            display: flex;
+            margin-left: 56px;
+            width: 100%;
+
+        }
+        #product ul{
+            flex-flow: row wrap;
+        }
+
+        #product li {
+            width: 325px;
+            height: 325px;
+            padding: 17px 0px 0px 0px;
+            float: left;
+            list-style: none;
+            background-color: rgba(255, 255, 255, 1);
+            margin: 5px 30px 41px 10px;
+            border: grey solid 2px;
+            border-top-left-radius: 23px;
+            border-top-right-radius: 23px;
+            cursor: pointer;
+
+        }
+
+        /* #product li:hover {
+
+            display: inline-block;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        } */
+
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+
+        .productname {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            background-color: #f58220;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        h2 {
+           
+            color: #f58220;
+            font-size: 32px;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="top">
+        <div class="topleft">Kanhaiya Lal & Sons</div>
+        <div class="topright">
+
+            <button class="button">SEND SMS</button>
+            <button class="button">SEND EMAIL</button>
+        </div>
+
+    </div>
+    <div>
+        <div id="navbar">
+            <ul >
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Our Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><input type="search" placeholder="search product"></li>
+            </ul>
+        </div>
+    </div>
+    <h2>PRODUCTS</h2>
+    <div id="product">
+        <ul>
+            <li class="imagezoom">
+                <div class="icon">
+                    <img src="speaker.png" alt="">
+                </div>
+                <div class="productname">Speaker</div>
+            </li>
+            <li class="imagezoom">
+                <div class="icon">
+                    <img src="box.png" alt="">
+                </div>
+                <div class="productname">Sound Box</div>
+            </li>
+            <li class="imagezoom">
+                <div class="icon">
+                    <img src="hazz.png" alt="">
+                </div>
+                <div class="productname">PA Compression Horn Drivers</div>
+            </li>
+            <li class="imagezoom">
+                <div class="icon">
+                    <img src="twitter.png" alt="">
+                </div>
+                <div class="productname">PA Compression Horn Drivers</div>
+            </li>
+            <li class="imagezoom">
+                <div class="icon">
+                    <img src="network.png" alt="">
+                </div>
+                <div class="productname">Crossover Network</div>
+            </li>
+            <li class="imagezoom">
+                <div class="icon">
+                    <img src="unit.png" alt="">
+                </div>
+                <div class="productname">PA Drivers Unit</div>
+            </li>
+
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
